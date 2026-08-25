@@ -1,4 +1,4 @@
-# Web Vulnerability Scanner
+# Web Vulnerability Scanner on Kali Linux
 
 A lightweight Python-based tool designed to scan web applications for common security misconfigurations, exposed administrative endpoints, missing security headers, Cross-Site Scripting (XSS), SQL Injection indicators, and open network ports.
 
@@ -6,21 +6,13 @@ A lightweight Python-based tool designed to scan web applications for common sec
 
 ---
 
-## 🚀 Features
+## ⚡ Quick Start Script (`setup_and_run.sh`)
 
-- **HTTP Security Header Audit**: Detects missing headers such as `Content-Security-Policy`, `Strict-Transport-Security`, `X-Frame-Options`, and `X-Content-Type-Options`.
-- **Exposed Endpoint Detection**: Checks for publicly accessible administrative pages and sensitive files (e.g., `.env`, `robots.txt`, `config.php`).
-- **Reflected XSS Scanner**: Identifies HTML forms that do not properly sanitize user inputs.
-- **SQL Error Indicator Check**: Tests query parameters against database error signature indicators.
-- **Port Scanner**: Performs basic socket checks on key service ports (`21`, `22`, `80`, `443`, `3306`, `8080`).
+You can automate the entire setup, virtual environment configuration, dependency installation, and initial execution using the script below.
 
----
-
-## 🛠️ Complete List of Project Commands
-
-### 1. System Verification
-Check that Python and Git are properly installed on your system:
-```powershell
+### 1. Create the Script File
+```bash
+nano setup_and_run.sh
 #!/bin/bash
 
 # Exit on error
@@ -61,7 +53,7 @@ echo "  python3 scanner.py"
 echo "----------------------------------------------------"
 echo "To push your project to GitHub, execute:"
 echo "  git branch -M main"
-echo "  git remote add origin https://github.com/YOUR-USERNAME/vuln-scanner.git"
+echo "  git remote add origin [https://github.com/YOUR-USERNAME/vuln-scanner.git](https://github.com/YOUR-USERNAME/vuln-scanner.git)"
 echo "  git push -u origin main"
 echo "----------------------------------------------------"
 
