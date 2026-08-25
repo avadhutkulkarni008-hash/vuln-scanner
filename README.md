@@ -16,8 +16,10 @@ A lightweight Python-based tool designed to scan web applications for common sec
 
 ---
 
-## 🛠️ Prerequisites
+## 🛠️ Complete List of Project Commands
 
-- **Python 3.x** installed on your system. Verify installation with:
-  ```powershell
-  python --version
+### 1. System Verification
+Check that Python and Git are properly installed on your system:
+```powershell
+python --version
+git --version
